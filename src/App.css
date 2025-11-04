@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  /* Couleurs personnalisées pour le jeu Snake */
+  --color-snake-primary: #00ff88;
+  --color-snake-secondary: #00cc6a;
+  --color-snake-head: #00ffaa;
+  --color-food: #ff0066;
+  --color-food-glow: #ff0088;
+  --color-board-bg: #0a0e1a;
+  --color-board-cell: #131824;
+  --color-board-border: #1e2738;
+  --color-game-bg-start: #050810;
+  --color-game-bg-middle: #1a0b2e;
+  --color-game-bg-end: #050810;
+  --color-score: #00ffaa;
+  --color-card-bg: #0f1419;
+  --color-card-border: #1e2738;
+  --color-neon-glow: #00ff88;
+  --color-purple-accent: #7c3aed;
+}
