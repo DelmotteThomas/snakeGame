@@ -36,7 +36,7 @@ export const useGameLoop = () => {
     );
     return newFood;
   }, []);
-
+  
   useEffect(() => {
     if (!gameStarted || gameOver) return;
 

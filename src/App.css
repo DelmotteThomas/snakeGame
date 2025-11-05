@@ -20,13 +20,35 @@
   --color-purple-accent: #7c3aed;
 }
 
-@keyframes food-glow {
+/* Animation personnalisée pour l'effet néon */
+@keyframes neon-pulse {
   0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 0 10px var(--color-food-glow);
+    filter: drop-shadow(0 0 2px var(--color-neon-glow))
+            drop-shadow(0 0 5px var(--color-neon-glow))
+            drop-shadow(0 0 10px var(--color-neon-glow));
   }
   50% {
-    transform: scale(1.2);
-    box-shadow: 0 0 20px var(--color-food-glow);
+    filter: drop-shadow(0 0 5px var(--color-neon-glow))
+            drop-shadow(0 0 10px var(--color-neon-glow))
+            drop-shadow(0 0 20px var(--color-neon-glow));
   }
+}
+/* Animation personnalisée pour l'effet de luminosité de la nourriture */
+@keyframes food-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px var(--color-food),
+                0 0 20px var(--color-food),
+                0 0 30px var(--color-food);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--color-food),
+                0 0 30px var(--color-food),
+                0 0 40px var(--color-food);
+  }
+}
+
+/* Animation personnalisée pour l'effet de luminosité de la grille */
+@keyframes grid-fade {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.2; }
 }

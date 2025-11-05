@@ -15,22 +15,21 @@ export const Game = () => {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center">
- 
-  <BackgroundEffects />
+      <BackgroundEffects />
+      <GameTitle />
 
-  <div className="mb-8 text-center z-10">
-    <GameTitle />
-  </div>
-  <div className="flex flex-col md:flex-row items-start justify-center gap-12 z-10">
-    <div className="flex flex-col items-center md:items-start gap-6">
-      <ScoreBoard />
-      <RestartButton />
-      <Controls />
-    </div>
-    <div className="flex justify-center items-center">
-      <GameBoard />
-    </div>
-  </div>
+      <div className="flex flex-col md:flex-row items-start justify-center gap-12 z-10">
+        <div className="flex flex-col items-center md:items-start gap-6">
+          <ScoreBoard />
+          <RestartButton />
+          <Controls />
+        </div>
+
+        <div className="flex justify-center items-center">
+          <GameBoard />
+        </div>
+      </div>
+   
   
 </div>
 

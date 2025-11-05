@@ -34,7 +34,7 @@ export const Cell = ({ isHead, isBody, isFood }) => {
         />
       )}
       {isBody && !isHead && (
-        <div className="absolute inset-1 bg-linear-to-br from-[--color-snake-primary] to-[--color-snake-secondary] rounded-sm"
+        <div className="absolute inset-1 bg-linear-to-br from-[--color-snake-primary] to-[--color-snake-secondary] rounded-sm animate-pulse"
         style={{
             boxShadow:'0 0 5px var(--color-neon-glow), inset 0 0 5px rgba(0,0,0,0.3)',
         }} />
