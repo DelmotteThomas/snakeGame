@@ -19,3 +19,14 @@
   --color-neon-glow: #00ff88;
   --color-purple-accent: #7c3aed;
 }
+
+@keyframes food-glow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px var(--color-food-glow);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px var(--color-food-glow);
+  }
+}

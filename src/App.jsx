@@ -1,13 +1,13 @@
-
 import { GameProvider } from './context/gameContext'
 import './App.css'
+import  {Game} from "./components/Game"
 
 function App() {
   
 
   return (
     <GameProvider>
-      <h1>Snake Game</h1>
+      <Game/>
     </GameProvider>
   )
 }

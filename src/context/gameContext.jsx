@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { createContext } from "react";
 import { INITIAL_DIRECTION, INITIAL_FOOD, INITIAL_SNAKE } from "../constants/gameConfig";
 import { useRef } from "react";
